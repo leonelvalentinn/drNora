@@ -1,10 +1,16 @@
-<nav>
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo">Logo</a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li>
-      <li><a href="collapsible.html">JavaScript</a></li>
+<nav class="navbar">
+  <div class="wraper-container">
+    <a href="" class="logo-container"><h1>BIODONTIQ</h1></a>
+    <div class="fondo-menu" [ngClass]="collapsed ? 'openMenu2' : ''"></div>
+    <ul class="menu" [ngClass]="collapsed ? 'openMenu' : ''">
+      <li><a href="">Inicio</a></li>
+      <li><a href="">Nosotros</a></li>
+      <li><a href="">Tratamientos Especiales</a></li>
+      <li><a href="">Servicios</a></li>
+      <li><a href="">Contacto</a></li>
     </ul>
+    <div class="btn-menu" (click)="onMenu()">
+      <img src="assets/menu.png" alt="" />
+    </div>
   </div>
 </nav>
