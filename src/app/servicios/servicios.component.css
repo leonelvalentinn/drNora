@@ -1,0 +1,21 @@
+.services {
+  width: 100%;
+  height: auto;
+}
+.services h2 {
+  color: #03a9a5;
+  font-weight: 700;
+  text-align: center;
+}
+.wrapper-services {
+  width: 90%;
+  margin: auto;
+}
+
+@media (min-width: 767px) {
+  .wrapper-services {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

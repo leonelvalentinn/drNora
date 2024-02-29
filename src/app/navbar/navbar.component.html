@@ -3,11 +3,39 @@
     <a href="" class="logo-container"><h1>BIODONTIQ</h1></a>
     <div class="fondo-menu" [ngClass]="collapsed ? 'openMenu2' : ''"></div>
     <ul class="menu" [ngClass]="collapsed ? 'openMenu' : ''">
-      <li><a href="">Inicio</a></li>
-      <li><a href="">Nosotros</a></li>
-      <li><a href="">Tratamientos Especiales</a></li>
-      <li><a href="">Servicios</a></li>
-      <li><a href="">Contacto</a></li>
+      <li>
+        <a href=""
+          >Inicio
+          <div class="line"></div>
+        </a>
+      </li>
+      <li>
+        <a href=""
+          >Nosotros
+          <div class="line"></div>
+        </a>
+      </li>
+      <li>
+        <a href=""
+          >Tratamientos
+          <div class="line"></div>
+        </a>
+      </li>
+      <li>
+        <a href=""
+          >Servicios
+          <div class="line"></div>
+        </a>
+      </li>
+      <li>
+        <a href=""
+          >Ubicación
+          <div class="line"></div>
+        </a>
+      </li>
+      <li>
+        <a href="" class="btn-especial">5512345412</a>
+      </li>
     </ul>
     <div class="btn-menu" (click)="onMenu()">
       <img src="assets/menu.png" alt="" />
