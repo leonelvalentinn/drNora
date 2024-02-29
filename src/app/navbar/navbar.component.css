@@ -25,6 +25,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
+  margin: 0;
 }
 .menu {
   position: absolute;
@@ -76,6 +77,11 @@
   font-size: 17px;
   text-transform: uppercase;
 }
+.btn-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .btn-menu img {
   width: 45px;
   height: 45px;
@@ -104,7 +110,7 @@
     text-decoration: none;
   }
   .logo-container h1 {
-    font-size: 28px;
+    font-size: 30px;
     background: -webkit-linear-gradient(left top, #009092, #00ffff);
     background: linear-gradient(to bottom right, #009092, #00ffff);
     -webkit-background-clip: text;
@@ -157,19 +163,20 @@
   .line {
     position: absolute;
     bottom: 15px;
-    left: 0;
+    left: 50%;
     width: 0;
     height: 4px;
     background-color: #009092;
     transition: all 0.5s;
+    transform: translate(-50%);
   }
 
   .menu li a:hover .line {
     background-color: none;
     position: absolute;
     bottom: 15px;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    width: 90%;
     height: 4px;
     background-color: #009092;
     transition: all 0.5s;

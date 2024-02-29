@@ -1,0 +1,33 @@
+<div class="tratamientos">
+  <h2>Tratamientos</h2>
+  <div class="container-tratamientos">
+    <div class="item-tratamientos">
+      <img src="assets/ortodoncia.svg" alt="" />
+      <h3>Ortodoncia</h3>
+      <a href="">Contacto</a>
+    </div>
+    <div class="item-tratamientos">
+      <img src="assets/ortodoncia.svg" alt="" />
+      <h3>Ortopedia Dental</h3>
+      <a href="">Contacto</a>
+    </div>
+    <div class="item-tratamientos">
+      <img src="assets/ortodoncia.svg" alt="" />
+      <h3>Prótesis</h3>
+      <a href="">Contacto</a>
+    </div>
+  </div>
+  <div
+    class="container-tratamientos-hidden"
+    [ngClass]="showServicios ? 'showContainer' : ''"
+  >
+    <div class="item-tratamientos" *ngFor="let item of Datos">
+      <img src="assets/{{ item.imgSrc }}" alt="" />
+      <h3>{{ item.title }}</h3>
+      <a href="">Contacto</a>
+    </div>
+  </div>
+  <button (click)="showServices()">
+    <p>Todos los servicios</p>
+  </button>
+</div>
