@@ -1,0 +1,52 @@
+.preguntas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.preguntas h2 {
+  color: #03a9a5;
+  font-weight: 700;
+  text-align: center;
+  font-size: 32px;
+  margin: 15px auto;
+}
+.collapsible {
+  width: 90%;
+}
+.collapsible-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.collapsible-header h6 {
+  font-size: 14px;
+}
+@media (min-width: 767px) {
+  .preguntas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .preguntas h2 {
+    color: #03a9a5;
+    font-weight: 700;
+    text-align: center;
+    font-size: 32px;
+    margin: 15px auto;
+  }
+  .collapsible {
+    width: 80%;
+  }
+  .collapsible-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .collapsible-header h6 {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,119 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-footer {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+.item-mapa {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  margin: 20px auto;
+}
+.item-mapa iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.item-footer:nth-child(1) {
+  gap: 20px;
+}
+.footer-footer {
+  background-color: #009092;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+.footer-footer .sub-item-footer2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  padding: 8px;
+}
+.footer-footer .sub-item-footer2 p {
+  text-align: center;
+  color: #fff;
+}
+.footer-footer .sub-item-footer2 p a {
+  text-align: center;
+  color: #fff;
+}
+
+@media (min-width: 767px) {
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-footer {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .item-mapa {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    margin: 20px auto;
+  }
+  .item-mapa iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .item-footer:nth-child(1) {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .item-footer:nth-child(1) .sub-item-footer:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+  }
+  .item-footer:nth-child(1) .sub-item-footer:nth-child(1) p {
+    font-size: 17px;
+  }
+  .footer-footer {
+    background-color: #009092;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+  }
+  .footer-footer .sub-item-footer2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+  }
+  .footer-footer .sub-item-footer2 p {
+    text-align: center;
+    color: #fff;
+  }
+}

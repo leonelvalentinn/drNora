@@ -13,6 +13,7 @@ interface Tratamientos {
 })
 export class TratamientosComponent {
   showServicios = false;
+  isTexto = true;
 
   Datos: Tratamientos[] = [
     { id: 15, title: 'Coronas', imgSrc: 'ortodoncia.svg' },
@@ -24,5 +25,6 @@ export class TratamientosComponent {
 
   showServices() {
     this.showServicios = !this.showServicios;
+    this.isTexto = !this.isTexto;
   }
 }

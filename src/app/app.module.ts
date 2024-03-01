@@ -11,6 +11,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { TratamientosComponent } from './tratamientos/tratamientos.component';
+import { PreguntasComponent } from './preguntas/preguntas.component';
+import { FooterComponent } from './footer/footer.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { TratamientosComponent } from './tratamientos/tratamientos.component';
     HeroComponent,
     ServiciosComponent,
     TratamientosComponent,
+    PreguntasComponent,
+    FooterComponent,
+    ModalComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgFor],
   providers: [provideClientHydration()],

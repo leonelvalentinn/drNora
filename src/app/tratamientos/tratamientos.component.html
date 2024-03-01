@@ -28,6 +28,7 @@
     </div>
   </div>
   <button (click)="showServices()">
-    <p>Todos los servicios</p>
+    <p *ngIf="isTexto; else menor">Todos los servicios</p>
+    <ng-template #menor><p>Menos servicios</p></ng-template>
   </button>
 </div>

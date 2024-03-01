@@ -92,6 +92,9 @@
             "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
             "assets": ["src/favicon.ico", "src/assets"],
+            "stylePreprocessorOptions": {
+              "includePaths": ["node_modules/"]
+            },
             "styles": ["src/styles.css"],
             "scripts": []
           }
